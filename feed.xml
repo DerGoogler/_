@@ -14,8 +14,8 @@
         <author>
             <name>Der_Googler</name>
         </author>
-        <link href="https://dergoogler.github.io/_/custom-html-translate/index.html"/>
-        <id>https://dergoogler.github.io/_/custom-html-translate/index.html</id>
+        <link href="https://dergoogler.github.io/_/custom-html-translate/"/>
+        <id>https://dergoogler.github.io/_/custom-html-translate/</id>
             <category term="JS"/>
             <category term="HTML"/>
             <category term="CUSTOM"/>
@@ -73,8 +73,8 @@ customElements.define(&quot;dg-lang&quot;, TTSLANG);</code></pre>
         <author>
             <name>Der_Googler</name>
         </author>
-        <link href="https://dergoogler.github.io/_/sample-post/index.html"/>
-        <id>https://dergoogler.github.io/_/sample-post/index.html</id>
+        <link href="https://dergoogler.github.io/_/sample-post/"/>
+        <id>https://dergoogler.github.io/_/sample-post/</id>
 
         <updated>2021-02-16T18:02:34+01:00</updated>
             <summary>

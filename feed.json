@@ -5,13 +5,14 @@
     "home_page_url": "https://dergoogler.github.io/_",
     "feed_url": "https://dergoogler.github.io/_/feed.json",
     "user_comment": "",
+    "icon": "https://dergoogler.github.io/_/media/website/dergoogler_round-2.png",
     "author": {
         "name": "Der_Googler"
     },
     "items": [
         {
-            "id": "https://dergoogler.github.io/_/custom-html-translate/index.html",
-            "url": "https://dergoogler.github.io/_/custom-html-translate/index.html",
+            "id": "https://dergoogler.github.io/_/custom-html-translate/",
+            "url": "https://dergoogler.github.io/_/custom-html-translate/",
             "title": "Custom HTML Translate",
             "summary": "Custom translatehere will you how to translate page with html class TTSLANG extends HTMLElement { connectedCallback() { if (getUrlParam(&quot;lang&quot;) == &quot;en&quot;) { this.innerHTML = this.getAttribute(&#39;en&#39;); } else if (getUrlParam(&quot;lang&quot;) == &quot;de&quot;) { this.innerHTML = this.getAttribute(&#39;de&#39;); } }}customElements.define(&quot;dg-lang&quot;, TTSLANG);output will be &lt;dg-lang&gt;&lt;/dg-lang&gt; so use you this&hellip;",
             "content_html": "<h1 id=\"custom-translate\">Custom translate</h1>\n<p>here will you how to translate page with html</p>\n<h2 id=\"create-the-html-tag\">Create the HTML tag</h2>\n<pre><code class=\"language-javascript\">class TTSLANG extends HTMLElement {\n    connectedCallback() {\n        if (getUrlParam(&quot;lang&quot;) == &quot;en&quot;) {\n            this.innerHTML = this.getAttribute(&#39;en&#39;);\n        } else if (getUrlParam(&quot;lang&quot;) == &quot;de&quot;) {\n            this.innerHTML = this.getAttribute(&#39;de&#39;);\n        }\n    }\n}\ncustomElements.define(&quot;dg-lang&quot;, TTSLANG);</code></pre>\n<p>output will be <code>&lt;dg-lang&gt;&lt;/dg-lang&gt;</code></p>\n<h2 id=\"setup-the-html-tag\">Setup the HTML tag</h2>\n<p>so use you this</p>\n<pre><code class=\"language-html\">&lt;!-- ... Some content ... --&gt;\n&lt;div id=&quot;what_ever_you_use&quot;&gt;\n...\n&lt;dg-lang de=&quot;Zugriff&quot; en=&quot;Access&quot;&gt;&lt;/dg-lang&gt;\n...\n&lt;/div&gt;\n&lt;!-- ... Some content ... --&gt;</code></pre>\n<h2 id=\"how-to-get-the-translation\">How to get the translation</h2>\n<p>Code (get url param)</p>\n<pre><code class=\"language-javascript\">function getUrlParam(param) {\n    param = param.replace(/([\\[\\](){}*?+^$.\\\\|])/g, &quot;\\\\$1&quot;);\n    var regex = new RegExp(&quot;[?]&quot; + param + &quot;=([^&amp;#]*)&quot;);\n    var url = decodeURIComponent(window.location.href);\n    var match = regex.exec(url);\n    return match ? match[1] : &quot;&quot;;\n}</code></pre>\n<p><strong>DE</strong>\n<code>https://example.com/?lang=de --&gt; &lt;dg-lang de=&quot;Zugriff&quot; en=&quot;Access&quot;&gt;Zugriff&lt;/dg-lang&gt;</code></p>\n<p><strong>EN</strong>\n<code>https://example.com/?lang=en --&gt; &lt;dg-lang de=&quot;Zugriff&quot; en=&quot;Access&quot;&gt;Access&lt;/dg-lang&gt;</code></p>\n",
@@ -27,8 +28,8 @@
             "date_modified": "2021-02-16T18:27:08+01:00"
         },
         {
-            "id": "https://dergoogler.github.io/_/sample-post/index.html",
-            "url": "https://dergoogler.github.io/_/sample-post/index.html",
+            "id": "https://dergoogler.github.io/_/sample-post/",
+            "url": "https://dergoogler.github.io/_/sample-post/",
             "title": "Sample Post",
             "summary": "I’ll test it lol",
             "content_html": "<p>I’ll test it lol</p>\n",
