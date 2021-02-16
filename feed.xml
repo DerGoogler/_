@@ -3,19 +3,78 @@
     <title>Der_Googler</title>
     <link href="https://dergoogler.github.io/_/feed.xml" rel="self" />
     <link href="https://dergoogler.github.io/_" />
-    <updated>2021-02-16T18:02:34+01:00</updated>
+    <updated>2021-02-16T18:27:08+01:00</updated>
     <author>
         <name>Der_Googler</name>
     </author>
     <id>https://dergoogler.github.io/_</id>
 
     <entry>
+        <title>Custom HTML Translate</title>
+        <author>
+            <name>Der_Googler</name>
+        </author>
+        <link href="https://dergoogler.github.io/_/custom-html-translate/index.html"/>
+        <id>https://dergoogler.github.io/_/custom-html-translate/index.html</id>
+            <category term="JS"/>
+            <category term="HTML"/>
+            <category term="CUSTOM"/>
+
+        <updated>2021-02-16T18:27:08+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Custom translatehere will you how to translate page with html class TTSLANG extends HTMLElement { connectedCallback() { if (getUrlParam(&quot;lang&quot;) == &quot;en&quot;) { this.innerHTML = this.getAttribute(&#39;en&#39;); } else if (getUrlParam(&quot;lang&quot;) == &quot;de&quot;) { this.innerHTML = this.getAttribute(&#39;de&#39;); } }}customElements.define(&quot;dg-lang&quot;, TTSLANG);output will be &lt;dg-lang&gt;&lt;/dg-lang&gt; so use you this&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h1 id="custom-translate">Custom translate</h1>
+<p>here will you how to translate page with html</p>
+<h2 id="create-the-html-tag">Create the HTML tag</h2>
+<pre><code class="language-javascript">class TTSLANG extends HTMLElement {
+    connectedCallback() {
+        if (getUrlParam(&quot;lang&quot;) == &quot;en&quot;) {
+            this.innerHTML = this.getAttribute(&#39;en&#39;);
+        } else if (getUrlParam(&quot;lang&quot;) == &quot;de&quot;) {
+            this.innerHTML = this.getAttribute(&#39;de&#39;);
+        }
+    }
+}
+customElements.define(&quot;dg-lang&quot;, TTSLANG);</code></pre>
+<p>output will be <code>&lt;dg-lang&gt;&lt;/dg-lang&gt;</code></p>
+<h2 id="setup-the-html-tag">Setup the HTML tag</h2>
+<p>so use you this</p>
+<pre><code class="language-html">&lt;!-- ... Some content ... --&gt;
+&lt;div id=&quot;what_ever_you_use&quot;&gt;
+...
+&lt;dg-lang de=&quot;Zugriff&quot; en=&quot;Access&quot;&gt;&lt;/dg-lang&gt;
+...
+&lt;/div&gt;
+&lt;!-- ... Some content ... --&gt;</code></pre>
+<h2 id="how-to-get-the-translation">How to get the translation</h2>
+<p>Code (get url param)</p>
+<pre><code class="language-javascript">function getUrlParam(param) {
+    param = param.replace(/([\[\](){}*?+^$.\\|])/g, &quot;\\$1&quot;);
+    var regex = new RegExp(&quot;[?]&quot; + param + &quot;=([^&amp;#]*)&quot;);
+    var url = decodeURIComponent(window.location.href);
+    var match = regex.exec(url);
+    return match ? match[1] : &quot;&quot;;
+}</code></pre>
+<p><strong>DE</strong>
+<code>https://example.com/?lang=de --&gt; &lt;dg-lang de=&quot;Zugriff&quot; en=&quot;Access&quot;&gt;Zugriff&lt;/dg-lang&gt;</code></p>
+<p><strong>EN</strong>
+<code>https://example.com/?lang=en --&gt; &lt;dg-lang de=&quot;Zugriff&quot; en=&quot;Access&quot;&gt;Access&lt;/dg-lang&gt;</code></p>
+
+            ]]>
+        </content>
+    </entry>
+    <entry>
         <title>Sample Post</title>
         <author>
             <name>Der_Googler</name>
         </author>
-        <link href="https://dergoogler.github.io/_/sample-post.html"/>
-        <id>https://dergoogler.github.io/_/sample-post.html</id>
+        <link href="https://dergoogler.github.io/_/sample-post/index.html"/>
+        <id>https://dergoogler.github.io/_/sample-post/index.html</id>
 
         <updated>2021-02-16T18:02:34+01:00</updated>
             <summary>
