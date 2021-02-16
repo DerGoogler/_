@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Univalcord Titlebar.json</title><meta name="description" content="Sample to custom titlebar.json in Univalcord"><meta name="robots" content="index, nofollow"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="amphtml" href="https://dergoogler.github.io/_/amp/univalcord-titlebarjson/"><link rel="alternate" type="application/atom+xml" href="https://dergoogler.github.io/_/feed.xml"><link rel="alternate" type="application/json" href="https://dergoogler.github.io/_/feed.json"><meta property="og:title" content="Univalcord Titlebar.json"><meta property="og:image" content="https://dergoogler.github.io/_/media/posts/3/icon.ico"><meta property="og:site_name" content="Der_Googler"><meta property="og:description" content="Sample to custom titlebar.json in Univalcord"><meta property="og:url" content="https://dergoogler.github.io/_/univalcord-titlebarjson/"><meta property="og:type" content="article"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@Der_Googler"><meta name="twitter:title" content="Univalcord Titlebar.json"><meta name="twitter:description" content="Sample to custom titlebar.json in Univalcord"><meta name="twitter:image" content="https://dergoogler.github.io/_/media/posts/3/icon.ico"><link rel="shortcut icon" href="https://dergoogler.github.io/_/media/website/dergoogler_round.png" type="image/png"><style>:root{--body-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--heading-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--logo-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--menu-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}</style><link rel="stylesheet" href="https://dergoogler.github.io/_/assets/css/style.css?v=ef46c3dd6d7602b9863e0321dd7f2fe3"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://dergoogler.github.io/_/univalcord-titlebarjson/"},"headline":"Univalcord Titlebar.json","datePublished":"2021-02-16T19:14","dateModified":"2021-02-16T19:14","image":{"@type":"ImageObject","url":"https://dergoogler.github.io/_/media/posts/3/icon.ico","height":256,"width":256},"description":"UnivalcordUse Apps with Custom CSS! We allowing the user to add more apps to the title (include with titlebar color, css and title!) Create this in your local: C:\\univalcord\\titlebar.json Example: [ { &quot;name&quot;: &quot;Discord&quot;, &quot;link&quot;: &quot;https://discord.com/app&quot;, &quot;titlebarColor&quot;: &quot;#24292e&quot;, &quot;stylesheet&quot;: { // new &quot;source&quot;: &quot;external&quot;, &quot;file&quot;:&hellip;","author":{"@type":"Person","name":"Der_Googler"},"publisher":{"@type":"Organization","name":"Der_Googler"}}</script></head><body><div class="site-container"><header class="top" id="js-header"><a class="logo" href="https://dergoogler.github.io/_/">Der_Googler</a><div class="search"><div class="search__overlay js-search-overlay"><div class="search__overlay-inner"><form action="https://dergoogler.github.io/_/search.html" class="search__form"><input class="search__input js-search-input" type="search" name="q" placeholder="search..." aria-label="search..." autofocus="autofocus"></form><button class="search__close js-search-close" aria-label="Close">Close</button></div></div><button class="search__btn js-search-btn" aria-label="Search"><svg role="presentation" focusable="false"><use xlink:href="https://dergoogler.github.io/_/assets/svg/svg-map.svg#search"/></svg></button></div></header><main><article class="post"><div class="hero"><figure class="hero__image hero__image--overlay"><img src="https://dergoogler.github.io/_/media/posts/3/icon.ico" loading="eager" height="256" width="256" alt=""><figcaption>2021 (C) Der_Googler</figcaption></figure><header class="hero__content"><div class="wrapper"><h1>Univalcord Titlebar.json</h1></div></header></div><div class="wrapper post__entry"><h1 id="univalcord">Univalcord</h1><p>Use Apps with Custom CSS!</p><h2 id="allowing-customing-titlebar">Allowing Customing Titlebar</h2><p>We allowing the user to add more apps to the title (include with titlebar color, css and title!)</p><p>Create this in your local: <code>C:\univalcord\titlebar.json</code></p><p>Example:</p><pre><code class="language-json">[
+    {
+        &quot;name&quot;: &quot;Discord&quot;,
+        &quot;link&quot;: &quot;https://discord.com/app&quot;,
+        &quot;titlebarColor&quot;: &quot;#24292e&quot;,
+        &quot;stylesheet&quot;: { // new
+            &quot;source&quot;: &quot;external&quot;,
+            &quot;file&quot;: &quot;https://raw.githubusercontent.com/Gibbu/BetterDiscord-Themes/master/Slate/base.css&quot;
+        },
+        &quot;javascript&quot;: { // new
+            &quot;source&quot;: &quot;internal&quot;,
+            &quot;file&quot;: &quot;discord.js&quot;
+        }
+    },
+    {
+        &quot;name&quot;: &quot;YouTube&quot;,
+        &quot;link&quot;: &quot;https://www.youtube.com&quot;,
+        &quot;titlebarColor&quot;: &quot;#212121&quot;,
+        &quot;stylesheet&quot;: { // new
+            &quot;source&quot;: &quot;internal&quot;,
+            &quot;file&quot;: &quot;youtube.css&quot;
+        },
+        &quot;javascript&quot;: { // new
+            &quot;source&quot;: &quot;internal&quot;,
+            &quot;file&quot;: &quot;youtube.js&quot;
+        }
+    },
+    {
+        &quot;name&quot;: &quot;WhatsApp&quot;,
+        &quot;link&quot;: &quot;https://web.whatsapp.com&quot;,
+        &quot;titlebarColor&quot;: &quot;#1c2026&quot;,
+        &quot;stylesheet&quot;: { // new
+            &quot;source&quot;: &quot;internal&quot;,
+            &quot;file&quot;: &quot;whatsapp.css&quot;
+        },
+        &quot;javascript&quot;: { // new
+            &quot;source&quot;: &quot;internal&quot;,
+            &quot;file&quot;: &quot;whatsapp.js&quot;
+        }
+    }
+]</code></pre><blockquote><p>don’t use comments</p></blockquote></div></article></main><footer class="footer"><div class="footer__copyright"><p><a href="https://getpublii.com" target="_blank" rel="nofollow noopener"></a>2021 &amp;copy; Der_Googler</p></div><button class="footer__bttop js-footer__bttop" aria-label="Back to top"><svg><title>Back to top</title><use xlink:href="https://dergoogler.github.io/_/assets/svg/svg-map.svg#toparrow"/></svg></button></footer></div><script>window.publiiThemeMenuConfig = {    
+        mobileMenuMode: 'sidebar',
+        animationSpeed: 300,
+        submenuWidth: 'auto',
+        doubleClickTime: 500,
+        mobileMenuExpandableSubmenus: true, 
+        relatedContainerForOverlayMenuSelector: '.top',
+   };</script><script defer="defer" src="https://dergoogler.github.io/_/assets/js/scripts.min.js?v=f4c4d35432d0e17d212f2fae4e0f8247"></script><script>var images = document.querySelectorAll('img[loading]');
+
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script></body></html>
